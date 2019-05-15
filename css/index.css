@@ -134,6 +134,25 @@ html,
 body {
   height: 100%;
 }
+h1 {
+  font-size: 3.5rem;
+  line-height: 60px;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 50px;
+  font-weight: bold;
+}
+hr {
+  border: 0.5px solid lightgray;
+}
+p {
+  margin: 20px 0px;
+}
 .container {
   max-width: 900px;
   display: flex;
@@ -163,20 +182,6 @@ section.main-profile {
 section.main-profile img {
   max-width: 300px;
 }
-section.main-profile h1 {
-  font-size: 3.5rem;
-  line-height: 60px;
-}
-section.main-profile h2 {
-  font-size: 1.5rem;
-  line-height: 40px;
-}
-section.main-profile hr {
-  border: 0.5px solid lightgray;
-}
-section.main-profile p {
-  margin: 20px 0px;
-}
 section.main-profile .btn {
   background-color: gray;
   height: 40px;
@@ -188,4 +193,12 @@ section.main-profile .btn {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.half-width {
+  width: 45%;
 }

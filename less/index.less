@@ -59,8 +59,29 @@ html, body {
 
 // start
 
-//variables
+h1 {
+	font-size: 3.5rem;
+	line-height: 60px;
+}
 
+h2 {
+	font-size: 1.5rem;
+	line-height: 40px;
+}
+
+h3 {
+	font-size: 2.0rem;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+hr {
+	border: 0.5px solid lightgray;
+}
+
+p {
+	margin: 20px 0px;
+}
 
 .container {
 	max-width: 900px;
@@ -94,20 +115,7 @@ section.main-profile {
 	img {
 		max-width: 300px;
 	}
-	h1 {
-		font-size: 3.5rem;
-		line-height: 60px;
-	}
-	h2 {
-		font-size: 1.5rem;
-		line-height: 40px;
-	}
-	hr {
-		border: 0.5px solid lightgray;
-	}
-	p {
-		margin: 20px 0px;
-	}
+	
 	.btn {
 		background-color: gray;
 		height: 40px;
@@ -120,4 +128,14 @@ section.main-profile {
 		font-weight: bold;
 		font-size: 1.2rem;
 	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.half-width {
+	width: 45%;
 }
