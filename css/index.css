@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +133,57 @@ table {
 html,
 body {
   height: 100%;
+}
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 4%;
+  padding-top: 0px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
+  margin-right: 40px;
+  height: 80px;
+}
+nav a {
+  margin-left: 4%;
+  font-size: 1.02rem;
+  text-decoration: none;
+  color: black;
+}
+section.main-profile {
+  background-color: #ebebf1;
+  padding: 60px 4%;
+}
+section.main-profile img {
+  max-width: 300px;
+}
+section.main-profile h1 {
+  font-size: 3.5rem;
+  line-height: 60px;
+}
+section.main-profile h2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+section.main-profile hr {
+  border: 0.5px solid lightgray;
+}
+section.main-profile .btn {
+  background-color: gray;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
