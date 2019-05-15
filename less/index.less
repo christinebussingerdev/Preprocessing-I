@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -57,21 +58,29 @@ html, body {
 	height: 100%;
 }
 
-// start
+// *********   START   *********
+//import
 
+//base element styles
 h1 {
 	font-size: 3.5rem;
-	line-height: 60px;
+	line-height: 3.75rem
+	;
 }
 
 h2 {
 	font-size: 1.5rem;
-	line-height: 40px;
+	line-height: 2.5rem;
 }
 
 h3 {
 	font-size: 2.0rem;
-	line-height: 50px;
+	line-height: 3.125rem;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.6rem;
+	line-height: 3.125rem;
 	font-weight: bold;
 }
 
@@ -81,8 +90,15 @@ hr {
 
 p {
 	margin: 20px 0px;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
 }
 
+a {
+	text-decoration: none;
+}
+
+//base page construction
 .container {
 	max-width: 900px;
 	display: flex;
@@ -106,14 +122,23 @@ nav {
 		text-decoration: none;
 		color: black;
 	}
+
+	a:hover {
+		cursor: pointer;
+		font-weight: bold;
+	}
 }
 
+//section styles
 section.main-profile {
 	background-color: rgb(235, 235, 241);
 	padding: 60px 4%;
 
 	img {
 		max-width: 300px;
+	}
+	h2 {
+		margin-top: 15px;
 	}
 	
 	.btn {
@@ -127,15 +152,87 @@ section.main-profile {
 		color: white;
 		font-weight: bold;
 		font-size: 1.2rem;
+		cursor: pointer;
+
 	}
 }
 
+section.summary {
+	p {
+		margin-top: 0px;
+	}
+}
+
+section.key-skills {
+	ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		li {
+			padding: 15px;
+			display: flex;
+			border: 0.5px solid lightgrey;
+			border-bottom: none;
+		}
+		li:first-child {
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		li:last-child {
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			border-bottom: 0.5px solid lightgrey;
+		} //li end
+	} // ul end
+}
+
+section.work-history {
+	table{
+		width: 100%;
+	}
+	th {
+		border-top:1px solid gray;
+		border-bottom: 1px solid gray;
+		vertical-align: middle;
+		text-align: left;
+		font-weight: bold;
+	}
+	tr {
+		height: 45px;
+		td:first-child {
+			font-weight: bold;
+		}
+
+	}
+	tr:nth-child(even) {
+		background-color: rgb(234, 234, 238);
+	}
+	td {
+		vertical-align: middle;
+
+	}
+	
+}
+
+//simple additive classes
 .row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 
 .half-width {
-	width: 45%;
+	width: 48.5%;
+}
+
+footer.copyright {
+	height: 80px;
+	background-color: gray;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
 }

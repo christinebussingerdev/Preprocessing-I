@@ -89,6 +89,7 @@ video {
   font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -136,15 +137,20 @@ body {
 }
 h1 {
   font-size: 3.5rem;
-  line-height: 60px;
+  line-height: 3.75rem;
 }
 h2 {
   font-size: 1.5rem;
-  line-height: 40px;
+  line-height: 2.5rem;
 }
 h3 {
   font-size: 2rem;
-  line-height: 50px;
+  line-height: 3.125rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 3.125rem;
   font-weight: bold;
 }
 hr {
@@ -152,6 +158,11 @@ hr {
 }
 p {
   margin: 20px 0px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
 }
 .container {
   max-width: 900px;
@@ -175,12 +186,19 @@ nav a {
   text-decoration: none;
   color: black;
 }
+nav a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
 section.main-profile {
   background-color: #ebebf1;
   padding: 60px 4%;
 }
 section.main-profile img {
   max-width: 300px;
+}
+section.main-profile h2 {
+  margin-top: 15px;
 }
 section.main-profile .btn {
   background-color: gray;
@@ -193,12 +211,69 @@ section.main-profile .btn {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+section.summary p {
+  margin-top: 0px;
+}
+section.key-skills ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.key-skills ul li {
+  padding: 15px;
+  display: flex;
+  border: 0.5px solid lightgrey;
+  border-bottom: none;
+}
+section.key-skills ul li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+section.key-skills ul li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 0.5px solid lightgrey;
+}
+section.work-history table {
+  width: 100%;
+}
+section.work-history th {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+}
+section.work-history tr {
+  height: 45px;
+}
+section.work-history tr td:first-child {
+  font-weight: bold;
+}
+section.work-history tr:nth-child(even) {
+  background-color: #eaeaee;
+}
+section.work-history td {
+  vertical-align: middle;
 }
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 20px;
 }
 .half-width {
-  width: 45%;
+  width: 48.5%;
+}
+footer.copyright {
+  height: 80px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
