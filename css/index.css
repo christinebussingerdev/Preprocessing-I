@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 3.125rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.6rem;
+  line-height: 3.125rem;
+  font-weight: bold;
+}
+hr {
+  border: 0.5px solid lightgray;
+}
+p {
+  margin: 20px 0px;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 4%;
+  padding-top: 0px;
+}
+.container nav {
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+.container nav a {
+  margin-left: 4%;
+  font-size: 1.02rem;
+  text-decoration: none;
+  color: black;
+}
+.container nav a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container nav {
+    justify-content: space-evenly;
+  }
+  .container nav a {
+    margin-left: 0px;
+  }
+}
+.container section.main-profile {
+  background-color: #ebebf1;
+  padding: 60px 4%;
+}
+.container section.main-profile img {
+  max-width: 300px;
+}
+.container section.main-profile h2 {
+  margin-top: 15px;
+}
+.container section.main-profile .btn {
+  background-color: gray;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .container section.main-profile img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.container section.summary p {
+  margin-top: 0px;
+}
+.container section.key-skills ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container section.key-skills ul li {
+  padding: 15px;
+  display: flex;
+  border: 0.5px solid lightgrey;
+  border-bottom: none;
+}
+.container section.key-skills ul li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.container section.key-skills ul li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 0.5px solid lightgrey;
+}
+.container section.work-history table {
+  width: 100%;
+}
+.container section.work-history th {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+}
+.container section.work-history tr {
+  height: 45px;
+}
+.container section.work-history tr td:first-child {
+  font-weight: bold;
+}
+.container section.work-history tr:nth-child(even) {
+  background-color: #eaeaee;
+}
+.container section.work-history td {
+  vertical-align: middle;
+}
+@media (max-width: 500px) {
+  .container section.work-history {
+    margin-top: 20px;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.half-width {
+  width: 48.5%;
+}
+@media (max-width: 500px) {
+  .half-width {
+    width: 100%;
+  }
+}
+footer.copyright {
+  height: 80px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
